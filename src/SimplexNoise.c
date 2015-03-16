@@ -172,4 +172,3 @@ float	raw_noise_3d(float x, float y, float z)
     }
   return 32.f * (n0 + n1 + n2 + n3);
 }
-

@@ -1,4 +1,5 @@
-#include "TurbulenceNoise.h"
+#include <math.h>
+#include "libNoise.h"
 
 float	turbulence_2d(int octaves, float lacunarity,
 		      float gain, float scale,

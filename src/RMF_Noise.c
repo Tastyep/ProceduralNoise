@@ -1,3 +1,4 @@
+#include "libNoise.h"
 #include "RMF_Noise.h"
 
 float	ridge(float h, float offset)

@@ -5,7 +5,6 @@
 #include <stdlib.h>
 
 #define FADE(t) (t * t * t * (t * (t * 6 - 15) + 10))
-//#define FASTFLOOR(x) (((x) > 0) ? ((int)x) : ((int)x - 1))
 #define LERP(t, a, b) ((a) + (t) * ((b) - (a)))
 
 #define S_NOISE_GEN 1013
@@ -16,12 +15,6 @@
 inline int FASTFLOOR(float x) { return (((x) > 0) ? ((int)x) : ((int)x - 1)); }
 
 float	perlin_grad2d(int hash, float x, float y);
-float	perlin2d(float x, float y);
-
-void	setSeed(unsigned int value);
-unsigned int getSeed();
-
-void	initPerm();
 
 extern unsigned char perlin_perm[512];
 

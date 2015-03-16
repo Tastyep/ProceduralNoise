@@ -2,6 +2,8 @@
 #define _SIMPLEXNOISE_H_
 
 #include "Perlin.h"
+#include "libNoise.h"
+
 #define F2 0.366025403f		// F2 = 0.5*(sqrt(3.0)-1.0)
 #define G2 0.211324865f		// G2 = (3.0-Math.sqrt(3.0))/6.0
 #define GX2 0.577350269f	// 2.f * G2 - 1.0
@@ -9,9 +11,6 @@
 #define F3 0.333333333f
 #define G3 0.166666667f
 #define E3 0.5f			// 1.f + 3.f * G3
-
-float raw_noise_2d(float x, float y);
-float raw_noise_3d(float x, float y, float z);
 
 static inline float dot2(const int* g, float x, float y)
 {

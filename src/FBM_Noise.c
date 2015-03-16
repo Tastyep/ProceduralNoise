@@ -1,4 +1,4 @@
-#include "FBM_Noise.h"
+#include "libNoise.h"
 
 float	fbm_2d(int octaves, float lacunarity,
 	       float gain, float scale,
